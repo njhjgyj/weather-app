@@ -40,6 +40,8 @@ var minTempValue = document.getElementById('b-id3-for-mintemp-value');
 var maxTemp = document.getElementById('b-id4-for-maxtemp');
 var maxTempValue = document.getElementById('b-id5-for-maxtemp-value');
 
+var img = document.getElementById('img-tag1');
+
 
 searchInpId.addEventListener('click', clickFunction);
 
@@ -69,6 +71,17 @@ function clickFunction() {
                 if (data.cod == '404') {
 
                     locationEnterByUser.innerText = data.cod + ' ' + data.message;
+                    img.removeAttribute('src');
+
+
+
+                    weatherQuality.innerText = "";
+                    temprature.innerText = "";
+
+                    minTempValue.innerText = "";
+                    maxTempValue.innerText = "";
+
+
 
                 } else {
 
@@ -83,6 +96,51 @@ function clickFunction() {
                     };
 
                 };
+
+                if (data.weather[0].description == 'smoke') {
+
+                    img.setAttribute('src', './smokeImage.jpg');
+
+                } else if (data.weather[0].description == 'broken clouds') {
+
+                    img.setAttribute('src', './brokenCloudsImage.jpg');
+
+                } else if (data.weather[0].description == 'clear sky') {
+
+                    img.setAttribute('src', './clearSkyImage.jpg');
+
+                } else if (data.weather[0].description == 'light rain') {
+
+                    img.setAttribute('src', './lightRainImage.jpg');
+
+                } else if (data.weather[0].description == 'scattered clouds') {
+
+                    img.setAttribute('src', './scatteredCloudsImage.jpg');
+
+                } else if (data.weather[0].description == 'moderate rain') {
+
+                    img.setAttribute('src', './moderateRainImage.jpg');
+
+                } else if (data.weather[0].description == "few clouds") {
+
+                    img.setAttribute('src', './fewCloudsImage.jpg');
+
+                } else if (data.weather[0].description == "overcast clouds") {
+
+                    img.setAttribute('src', './overcastCloudsImage.jpg');
+
+                } else if (data.weather[0].description == "mist") {
+
+                    img.setAttribute('src', './mistImage.jpg');
+
+                } else if (data.weather[0].description == "haze") {
+
+                    img.setAttribute('src', './hazeImage.jpg');
+
+                }
+
+
+                // smoke, broken clouds, clear sky,  light rain, scattered clouds, moderate rain, few clouds, overcast clouds, mist, haze,
 
 
                 weatherQuality.innerText = data.weather[0].description;
