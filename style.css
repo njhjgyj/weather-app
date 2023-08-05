@@ -1,0 +1,154 @@
+@media screen and (max-width: 950px) and (min-width: 200px) {
+
+    * {
+
+        margin: 0;
+        padding: 0;
+
+    }
+
+    #main-div1 {
+
+        background-color: white;
+        max-width: 100%;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #main-div2 {
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 82vh;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-left: 1px solid #3ba6d2;
+        border-right: 1px solid #3ba6d2;
+        border-bottom: 1px solid #3ba6d2;
+        position: absolute;
+
+    }
+
+    #div1 {
+
+        color: #343333;
+        max-width: 100%;
+        padding: 5% 10% 15%;
+        font-family: sans-serif;
+
+    }
+
+    #form-id1 {
+
+        padding: 10px;
+        max-width: 100%;
+        text-align: center;
+
+    }
+
+    #div2 {
+
+        max-width: 100%;
+        height: 60vh;
+
+    }
+
+    #div-for-form {
+
+        display: flex;
+        max-width: 100%;
+        height: 20vh;
+        justify-content: center;
+        align-items: center
+    }
+
+    input {
+
+        width: 95%;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-size: large;
+        font-weight: 600;
+
+    }
+
+    #div3 {
+
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+
+
+
+    }
+
+    #div4 {
+
+        padding: 20px
+    }
+
+    #div-for-data-enter-by-user {
+
+        padding: 10px;
+        text-align: center
+    }
+
+    #h2-id2-for-location-enter-by-user {
+
+        font-family: cursive;
+        padding: 15px;
+
+    }
+
+    #b-id1-for-weather-quality {
+
+        font-family: sans-serif;
+
+    }
+
+    #p-id1-for-temprature {
+
+        padding: 10px;
+        font-family: cursive;
+
+    }
+
+    #div5 {
+
+        margin: 20px;
+        padding: 30px;
+        display: flex;
+        gap: 50px;
+        font-family: sans-serif;
+        text-align: center;
+
+    }
+
+    #div6 {
+
+        background-color: white;
+        max-width: 100%;
+        padding: 3.5vh;
+        text-align: center;
+        font-family: cursive;
+        font-size: large;
+        margin-top: 20px;
+
+    }
+
+    img {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: fit-content;
+        height: 90vh;
+
+    }
+
+}
